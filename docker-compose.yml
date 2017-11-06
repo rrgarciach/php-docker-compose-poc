@@ -1,0 +1,35 @@
+version: '3'
+services:
+  users-service:
+    container_name: users-service
+    build: .
+    volumes:
+      - .:/var/www
+    ports:
+      - "8080:80"
+    # command: ["composer", "install", "--no-dev"]
+    # depends_on:
+    #   - packages-db
+    environment:
+      DEBUG: 1
+      MYSQL_HOST: packages-db
+      MYSQL_USER: packages
+      MYSQL_PASSWORD: password123
+      MYSQL_DATABASE: packages
+    # external_links:
+      # - redis-session
+      # - packages-db
+    network_mode: bridge
+
+  # packages-db:
+  #   container_name: packages-db
+  #   image: mysql:5.7
+  #   restart: always
+  #   ports:
+  #     - "3306:3306"
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: passwordroot
+  #     MYSQL_USER: packages
+  #     MYSQL_PASSWORD: password123
+  #     MYSQL_DATABASE: packages
+  #   network_mode: bridge
