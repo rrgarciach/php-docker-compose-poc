@@ -7,7 +7,6 @@ services:
       - .:/var/www
     ports:
       - "8080:80"
-    # command: ["composer", "install", "--no-dev"]
     # depends_on:
     #   - packages-db
     environment:
@@ -19,7 +18,7 @@ services:
     # external_links:
       # - redis-session
       # - packages-db
-    network_mode: bridge
+#    network_mode: bridge
 
   # packages-db:
   #   container_name: packages-db
