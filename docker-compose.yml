@@ -10,6 +10,9 @@ services:
     # depends_on:
     #   - packages-db
     environment:
+#      PHP_IDE_CONFIG: "serverName=docker"
+#      PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
+#      XDEBUG_CONFIG: remote_host=10.254.254.254
       DEBUG: 1
       MYSQL_HOST: packages-db
       MYSQL_USER: packages
@@ -18,7 +21,7 @@ services:
     # external_links:
       # - redis-session
       # - packages-db
-#    network_mode: bridge
+    network_mode: bridge
 
   # packages-db:
   #   container_name: packages-db
