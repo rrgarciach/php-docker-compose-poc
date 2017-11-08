@@ -5,33 +5,31 @@ services:
     build: .
     volumes:
       - .:/var/www
+      - ./config/php-dev.ini:/usr/local/etc/php/php.ini
     ports:
       - "8080:80"
     # depends_on:
-    #   - packages-db
+    #   - users-db
     environment:
-#      PHP_IDE_CONFIG: "serverName=docker"
-#      PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
-#      XDEBUG_CONFIG: remote_host=10.254.254.254
-      DEBUG: 1
-      MYSQL_HOST: packages-db
-      MYSQL_USER: packages
+      APP_ENV: development
+      MYSQL_HOST: users-db
+      MYSQL_USER: users
       MYSQL_PASSWORD: password123
-      MYSQL_DATABASE: packages
+      MYSQL_DATABASE: users
     # external_links:
       # - redis-session
-      # - packages-db
+      # - users-db
     network_mode: bridge
 
-  # packages-db:
-  #   container_name: packages-db
+  # users-db:
+  #   container_name: users-db
   #   image: mysql:5.7
   #   restart: always
   #   ports:
   #     - "3306:3306"
   #   environment:
   #     MYSQL_ROOT_PASSWORD: passwordroot
-  #     MYSQL_USER: packages
+  #     MYSQL_USER: users
   #     MYSQL_PASSWORD: password123
-  #     MYSQL_DATABASE: packages
+  #     MYSQL_DATABASE: users
   #   network_mode: bridge

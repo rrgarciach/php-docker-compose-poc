@@ -13,7 +13,7 @@ This is a deployeable REST API micro-service in PHP Silex that handles *User* en
 
 ### Prerequisites
 
-- Install [Docker Compose](https://docs.docker.com/compose/install) on system
+- Install [Docker Compose](https://docs.docker.com/compose/install) on system.
 
 ### Installing
 
@@ -38,7 +38,7 @@ Linux OS:
 
 ### Additional hints
 
-To get access to container's internal bash terminal:
+To get access to container's internal bash terminal simply run:
   
   `docker exec -it users-service /bin/bash`
 
@@ -52,4 +52,4 @@ To get access to container's internal bash terminal:
 
 ## Versioning
 
-This project uses [SemVer](http://semver.org) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+This project uses [SemVer](http://semver.org) for versioning.
