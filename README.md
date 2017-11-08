@@ -1,6 +1,6 @@
 # Users microservice P.O.C
 
-This is a deployeable REST API micro-service in PHP Silex that handles Users entities through CRUD operations using MySQL DBMS.
+This is a deployeable REST API micro-service in PHP Silex that handles *User* entities through CRUD operations using MySQL DBMS.
 
 ## TODO:
 
@@ -13,7 +13,7 @@ This is a deployeable REST API micro-service in PHP Silex that handles Users ent
 
 ### Prerequisites
 
-- [Install](https://docs.docker.com/compose/install/) Install Docker Compose on system
+- Install [Docker Compose](https://docs.docker.com/compose/install) on system
 
 ### Installing
 
@@ -52,6 +52,4 @@ To get access to container's internal bash terminal:
 
 ## Versioning
 
-We use [SemVer](http://semver.org) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-Ruys-MBP:query-api rrgarciach$ 
-
+This project uses [SemVer](http://semver.org) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
