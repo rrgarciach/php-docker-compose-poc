@@ -1,6 +1,6 @@
 # Users microservice P.O.C
 
-This is a deployeable REST API micro-service in PHP Silex that handles users through CRUD operations using MySQL DBMS.
+This is a deployeable REST API micro-service in PHP Silex that handles Users entities through CRUD operations using MySQL DBMS.
 
 ## TODO:
 
