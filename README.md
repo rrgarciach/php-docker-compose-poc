@@ -1,6 +1,6 @@
-# Users microservice P.O.C
+# PHP application with Docker Compose P.O.C
 
-This is a deployeable REST API micro-service in PHP Silex that handles *User* entities through CRUD operations using MySQL DBMS.
+This is a deployeable PHP application contained with Docker Compose.
 
 ## TODO:
 
